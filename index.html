@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMSTURB</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(pe7.jpg);
+            color: #333;
+        }
+        header {
+            background-color: #000; /* Black header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-links {
+            margin-top: 10px;
+        }
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 150px); /* Adjust for header and footer height */
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 2px solid #00509e; /* Medium blue border */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(30% - 40px); /* Increase product width */
+            padding: 25px; /* Increase padding */
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            border-color: #003366; /* Darker blue on hover */
+        }
+        img {
+            width: 180px; /* Increased width for images */
+            height: 180px; /* Increased height for images */
+            object-fit: cover; /* Maintain aspect ratio and cover the area */
+            border-radius: 8px;
+        }
+        h2 {
+            color: #003366; /* Dark blue product title */
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 1.5em; /* Increase price font size */
+            color: #0077cc; /* Bright blue price color */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between buttons */
+        }
+        button {
+            background-color: #003366; /* Dark blue button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #002244; /* Darker blue on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px; /* Decrease footer padding */
+            background-color: #000; /* Black footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RAMSTURB</h1>
+    
+    <div class="header-links">
+        <a href="login.html">Login</a>
+        <a href="#">About</a>
+    </div>
+</header>
+<body>
+    
+<div class="container">
+    <h2>Featured Shoe Items</h2>
+    <div class="products">
+        <div class="product">
+            <img src="th (1).jpg" alt="Sneakers">
+            <h2>SHOE 1</h2>
+            <p class="price">$59.99</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="th (2).jpg" alt="Boots">
+            <h2>SHOE 2</h2>
+            <p class="price">$89.99</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="th.jpg" alt="Sandals">
+            <h2>SHOE 3</h2>
+            <p class="price">$39.99</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="b335fb19aee071b7e32809c4466e7d4f.jpg" alt="Loafers">
+            <h2>SHOE 4</h2>
+            <p class="price">$49.99</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="th (1).jpg" alt="Heels">
+            <h2>SHOE 5</h2>
+            <p class="price">$79.99</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="th (2).jpg" alt="Rning Shoes">
+            <h2>SHOE 6</h2>
+            <p class="price">$69.99</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 RAMSTURB. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

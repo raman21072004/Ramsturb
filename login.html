@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMSTURB Login</title>
+    <style>
+        body {
+            background-image: url(pe7.jpg);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            width: 100%;
+            padding: 20px; /* Increased padding for height */
+            text-align: center;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 30px; /* Increased font size */
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border: 5px double #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            height: 40%;
+            width: 300px; /* Fixed width for the container */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%; /* Ensure input groups take full width */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #ffffff;
+        }
+
+        input:focus {
+            border-color: #ff9800;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff9800;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e68a00;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            width: 100%;
+            padding: 20px; /* Increased padding for height */
+            text-align: center;
+            border-top: 1px solid #ffffff;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 18px; /* Increased font size */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>RAMSTURB</h1>
+    </nav>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RAMSTURB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
